@@ -1,0 +1,120 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <title>sean_Wu [Competitions]</title>
+  <meta name="description" content="website description" />
+  <meta name="keywords" content="website keywords, website keywords" />
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+  <link rel="stylesheet" type="text/css" href="style/style.css" title="style" />
+</head>
+
+<body>
+  <div id="main">
+    <div id="header">
+      <div id="logo">
+        <div id="logo_text">
+          <!-- class="logo_colour", allows you to change the colour of the text -->
+          <h1><a href="index.html">SEAN<span class="logo_colour"> WU</span></a></h1>
+          <h2>DATA, STRATEGY AND LEARNING</h2>
+        </div>
+      </div>
+      <div id="menubar">
+        <ul id="menu">
+          <!-- put class="selected" in the li tag for the selected page - to highlight which page you're on -->
+          <li><a href="index.html">Home</a></li>
+          <li class="selected"><a href="projects.html">Projects</a></li>
+          <li><a href="cooking.html">Cooking</a></li>
+          <li><a href="">C.V.</a></li>
+        </ul>
+      </div>
+    </div>
+    <div id="site_content">
+      <div class="sidebar">
+      </div>
+
+      <div id="content">
+        <h3>Toronto Apartment-Market Analysis</h3>
+        <a href="https://github.com/seanwutoronto/toronto-apartment-market-analysis">
+        GitHub Link
+        </a>
+        <p>
+          <b>Description:</b>
+          <br>
+          I initially conduct an exploratory analysis on the
+          <a href="https://open.toronto.ca/dataset/apartment-building-evaluation/"> 
+            dataset 
+          </a>
+          to examine the distribution of features.
+          <br>
+          Then I cleaned the data by removing unnecessary columns and fill in null-cells 
+          by KNN (tractable due to size of dataset).
+          <br>
+          Then I extract features from domain-knowledge and common intuition.
+          <br>
+          Then I remove outliers based on exploratory analysis, and remove noise 
+          with an auto-encoder. Then add more features with polynomial augmentation.
+          <br>
+          Processed dataset is then normalized and split to train-test.
+          <br>
+          We add a predictive model utilizing random forest, tuning the parameters with the K-means elbow rule.
+          <br>
+          Conduct cross-validation by k-fold split.
+          <br>
+          Finally, I created the visualizations for this dataset to tell a story.
+        </p>
+
+        <h3>Shoop</h3>
+        <a href="https://github.com/seanwutoronto/shoop">
+        GitHub Link
+        </a>
+        <p>
+          <b>Description:</b>
+          <br>
+          I developed a general AR framework, periodically adding modules to it.
+          <br>
+          Modules include face-overlays, facial recognition and then log the face.
+          <br>
+          It will scrape social media, and assign a social-score to the individual.
+          <br>
+          Modules usually inspired by convenience, then fun, then I try to make it 
+          not feel dystopian.
+        </p>
+
+        <h3>Data Science Bank</h3>
+        <a href="https://github.com/seanwutoronto/data-science-bank">
+        GitHub Link
+        </a>
+        <p>
+          <b>Description:</b>
+          <br>
+          Concepts I have learned from academia or online-courses. I convert them to code 
+          and store in this repo for easy access later on.
+          <br>
+          Also includes a boilerplate template on how to best approach a data science project,
+          formulated and tweaked by me throughout the years.
+        </p>
+      </div>
+    </div>
+    <div id="footer">
+      <span>
+        <a href="mailto:seanwutoronto@gmail.com" target="_blank">
+         <img src="images/email.png" style="width:60px;height:60px;"/>
+        </a>
+      </span>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <span>
+        <a href="https://github.com/seanwutoronto" target="_blank">
+         <img src="images/git.png" style="width:60px;height:60px;"/>
+        </a>
+      </span>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <span>
+        <a href="https://www.linkedin.com/in/seanwutoronto/" target="_blank">
+         <img src="images/linkedin.png" style="width:60px;height:60px;"/>
+        </a>
+      </span>
+    </div>
+  </div>
+</body>
+</html>
