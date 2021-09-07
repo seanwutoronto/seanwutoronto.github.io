@@ -40,7 +40,7 @@
         GitHub Link
         </a>
         <p>
-          <b>Description:</b>
+          <b>Summary: data science project from start to finish</b>
           <br>
           I initially conduct an exploratory analysis on the
           <a href="https://open.toronto.ca/dataset/apartment-building-evaluation/"> 
@@ -48,38 +48,58 @@
           </a>
           to examine the distribution of features.
           <br>
-          Then I cleaned the data by removing unnecessary columns and fill in null-cells 
+          I cleaned the data by removing unnecessary columns and fill in null-cells 
           by KNN (tractable due to size of dataset).
           <br>
-          Then I extract features from domain-knowledge and common intuition.
+          Categorical variables are encoded.
           <br>
-          Then I remove outliers based on exploratory analysis, and remove noise 
-          with an auto-encoder. Then add more features with polynomial augmentation.
+          Then I remove outliers based on standard deviation, and 
+          add more features with polynomial augmentation.
           <br>
           Processed dataset is then normalized and split to train-test.
           <br>
-          We add a predictive model utilizing random forest, tuning the parameters with the K-means elbow rule.
+          We add a predictive model utilizing a random forest regressor, 
+          predicting number of floors to the general condition of the building with 86% accuracy.
           <br>
           Conduct cross-validation by k-fold split.
           <br>
           Finally, I created the visualizations for this dataset to tell a story.
+          <br>
+          <br>
+          Here we see the distribution of apartment buildings for the GTA.
+          <br>
+          <img src="images/projects/property_location.png" style="width:550px;">
+          <br>
+          We plot a heatmap of buildings belonging to the 
+          Toronto Community Housing Corporation.
+          <br>
+          <img src="images/projects/gov.png" style="width:550px;">
+          <br>
+          More visual examples in the GitHub repo.
         </p>
 
-        <h3>Shoop</h3>
-        <a href="https://github.com/seanwutoronto/shoop">
-        GitHub Link
-        </a>
+        <h3>Nostradamus</h3>
         <p>
-          <b>Description:</b>
+          <b>Summary: algorithmic trading assisstant</b>
           <br>
-          I developed a general AR framework, periodically adding modules to it.
+          It is a collection of modules mostly all feeding to a single reinforcement 
+          learning model.
           <br>
-          Modules include face-overlays, facial recognition and then log the face.
+          Data collection for news articles conducted by the Aylien News API, sentiments 
+          analysis done using an uncased multilingual BERT model.
           <br>
-          It will scrape social media, and assign a social-score to the individual.
+          Real time stock price data collected selectively with yfinance API 
+          due to rate limits.
           <br>
-          Modules usually inspired by convenience, then fun, then I try to make it 
-          not feel dystopian.
+          Simulations on interest rates by Monte Carlo with geometric Brownian motion
+          used for bond pricing. 
+          <br>
+          Asset allocation for portfolio holdings simulated by Monte Carlo 
+          on the Markowitz model.
+          <br>
+          Experiments on particle filtering, survival anaylsis, and anything I learned 
+          from university or online courses.
+
         </p>
 
         <h3>Data Science Bank</h3>
@@ -87,12 +107,18 @@
         GitHub Link
         </a>
         <p>
-          <b>Description:</b>
+          <b>Summary: notes but in code format</b>
           <br>
           Concepts I have learned from academia or online-courses. I convert them to code 
           and store in this repo for easy access later on.
           <br>
-          Also includes a boilerplate template on how to best approach a data science project,
+          <!-- Notable examples: Denoising algorithms for image-data (auto-encoder), 
+          for signal-data (Fourier transform), survival analysis, hyperparameters tuning,
+          ...etc.
+          <br>
+
+          <br> -->
+          Includes a boilerplate template on how to best approach a data science project,
           formulated and tweaked by me throughout the years.
         </p>
       </div>
